@@ -11,9 +11,8 @@ namespace BookExtension.Tests
         public string GetBookInfo_ByName_ValidResult()
         {
             Book book1 = new Book("C# in Depth", "Jon Skeet", "Manning", "2019", "900", "40$");
-
             BookFormatExtension bfe = new BookFormatExtension();
-
+            
             return bfe.getInfo(book1, new OutByName());
         }
 
@@ -21,7 +20,6 @@ namespace BookExtension.Tests
         public string GetBookInfo_ByAuthorTitle_ValidResult()
         {
             Book book1 = new Book("C# in Depth", "Jon Skeet", "Manning", "2019", "900", "40$");
-
             BookFormatExtension bfe = new BookFormatExtension();
 
             return bfe.getInfo(book1, new OutByAuthorTitle());
@@ -31,7 +29,6 @@ namespace BookExtension.Tests
         public string GetBookInfo_ByFull_ValidResult()
         {
             Book book1 = new Book("C# in Depth", "Jon Skeet", "Manning", "2019", "900", "40$");
-
             BookFormatExtension bfe = new BookFormatExtension();
 
             return bfe.getInfo(book1, new OutFull());
